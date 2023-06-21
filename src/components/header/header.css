@@ -1,0 +1,91 @@
+header {
+    min-height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* =========== CTA ========== */
+
+.cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* =========== HEADER SOCIALS ========== */
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 2px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+.me {
+    background-image: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 22rem;
+    overflow: hidden;
+    /* position: absolute; */
+    /* left: 50% ; */
+    margin: auto;
+    margin-top: 2.5rem;
+    border-radius: 12rem 12rem 0 0;
+    padding: -2rem 0 0 0;
+}
+
+.scroll__down {
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    transform: rotateZ(90deg);
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+/* ========== MEADIA QUERY for (MEDIUM DEVICES) ======================= */
+
+@media screen and (max-width : 1024px) {
+    header {
+        height: 60vh;
+        overflow: hidden;
+    }
+}
+
+
+/* ========== MEADIA QUERY for (SMALL DEVICES) ======================= */
+
+@media screen and (max-width : 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 481px) {
+    /* .me{
+        margin-top: 10rem;
+    } */
+    
+}

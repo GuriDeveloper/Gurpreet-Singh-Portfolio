@@ -1,0 +1,63 @@
+nav{
+    background-color: rgba(0,0,0,.3);
+    width: max-content;
+    display: block;
+    padding: .7rem 1.7rem;
+    z-index: 100;
+    position: fixed;
+    left: 50%;
+    /* top: 87%; */
+    bottom: 1rem;
+    transform: translateX(-50%);
+    display: flex;
+    gap: .8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a{
+    background: transparent;
+    padding: .8rem;
+    display: flex;
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    /* outline: none; */
+}
+
+nav a:hover{
+    background-color: rgba(0, 0, 0, .2);
+    outline: none;
+    border-radius: 50%;
+}
+
+
+
+/* nav a:focus{
+    border-radius: 50%;
+    outline: none;
+    outline-style: none;
+    
+} */
+
+nav a:active{
+    outline-style: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+nav a.active{
+    outline: none;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+nav a.active:visited{
+    background-color: transparent;
+}
+
+nav a.active:active,nav a.active:focus{
+    outline-style: none;
+    border-radius: 50%;
+}
