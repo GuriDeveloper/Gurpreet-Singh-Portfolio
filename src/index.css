@@ -48,7 +48,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-variant);
   color: var(--color-white);
   line-height: 1.7;
   background-image: url('./assests/bg-texture.png');
